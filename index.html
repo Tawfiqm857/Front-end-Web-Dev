@@ -383,7 +383,7 @@
     <section>
       <div class="signup-form">
   <h2>Register to Learn Front-End Web Development</h2>
- <form id="registration-form" action="https://formspree.io/f/manybybb" method="POST">
+<form id="registration-form" action="https://formspree.io/f/manybybb" method="POST" enctype="multipart/form-data">
   <input type="hidden" name="_redirect" value="https://wa.link/r3pm8h">
 
   <label for="full-name">Full Name:</label>
@@ -406,6 +406,9 @@
 
   <label for="message">Why do you want to learn Front-End Web Development?</label>
   <textarea id="message" name="message" placeholder="Tell us briefly..." required></textarea>
+
+  <label for="passport-photo">Upload Your Passport Photograph:</label>
+  <input type="file" id="passport-photo" name="passport-photo" accept="image/*" required>
 
   <button type="submit">Register Now</button>
 </form>
