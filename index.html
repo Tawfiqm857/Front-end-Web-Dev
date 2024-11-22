@@ -395,20 +395,42 @@
   <label for="phone">Phone Number:</label>
   <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
 
-  <label for="experience">Do you have prior experience in coding?</label>
-  <select id="experience" name="experience" required>
-    <option value="" disabled selected>Select an option</option>
-    <option value="No Experience">No Experience</option>
-    <option value="Basic Knowledge">Basic Knowledge</option>
-    <option value="Intermediate">Intermediate</option>
-    <option value="Advanced">Advanced</option>
+  <label>Gender:</label>
+  <div>
+    <label>
+      <input type="radio" name="gender" value="Male" required> Male
+    </label>
+    <label>
+      <input type="radio" name="gender" value="Female" required> Female
+    </label>
+    <label>
+      <input type="radio" name="gender" value="Other" required> Other
+    </label>
+  </div>
+
+  <label>Preferred Mode of Class:</label>
+  <div>
+    <label>
+      <input type="radio" name="mode" value="Online" required> Online
+    </label>
+    <label>
+      <input type="radio" name="mode" value="In-person" required> In-person
+    </label>
+  </div>
+
+  <label for="schedule">Preferred Schedule:</label>
+  <select id="schedule" name="schedule" required>
+    <option value="" disabled selected>Select your availability</option>
+    <option value="Morning (9 AM - 12 PM)">Morning (9 AM - 12 PM)</option>
+    <option value="Afternoon (1 PM - 4 PM)">Afternoon (1 PM - 4 PM)</option>
+    <option value="Evening (5 PM - 8 PM)">Evening (5 PM - 8 PM)</option>
   </select>
 
-  <label for="message">Why do you want to learn Front-End Web Development?</label>
-  <textarea id="message" name="message" placeholder="Tell us briefly..." required></textarea>
+  <label for="goals">What do you hope to achieve with this class?</label>
+  <textarea id="goals" name="goals" placeholder="E.g., Build a personal website, learn basic web design..." required></textarea>
 
-<!--   <label for="passport-photo">Upload Your Passport Photograph:</label>
-  <input type="file" id="passport-photo" name="passport-photo" accept="image/*" required> -->
+  <label for="passport-photo">Upload Your Passport Photograph:</label>
+  <input type="file" id="passport-photo" name="passport-photo" accept="image/*" required>
 
   <button type="submit">Register Now</button>
 </form>
